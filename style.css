@@ -6,7 +6,6 @@ body {
 }
 
 
-/* Menu Bar Styles */
 nav {
   background-color: #4c2c17;
   color: #07485B;
@@ -29,14 +28,12 @@ nav a {
 
 
 nav a:hover {
-  opacity: 0.6; /* Sets the opacity to 70% on hover */
+  opacity: 0.6; 
 }
 
 
-/* Body content adjustments */
 body {
   margin-top: 60px;
-  /* Adjust for fixed menu bar */
   font-size: 24px;
 }
 
@@ -67,8 +64,8 @@ border: 4px solid #000;
 background-color: #fff;
 margin: 50px auto;
 padding: 20px;
-border-radius: 15px; /* Rounded corners */
-box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+border-radius: 15px; 
+box-shadow: 8px 8px 0px #000; 
 text-align: center;
 }
 
@@ -101,7 +98,6 @@ text-align: center;
   /* Initially hidden */
 }
 
-/* Show interactive elements on hover */
 #comic-container:hover .interactive-element {
   display: block;
 }
@@ -199,12 +195,12 @@ text-align: center;
 .team-section {
 background-color: #fff;
 border: 4px solid #000;
-border-radius: 15px; /* Rounded corners */
+border-radius: 15px; 
 padding: 30px;
 width: 80%;
 max-width: 800px;
 margin: 50px auto;
-box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+box-shadow: 8px 8px 0px #000; 
 text-align: center;
 }
 
@@ -223,7 +219,7 @@ border: 4px solid #000;
 border-radius: 15px;
 padding: 20px;
 width: 250px;
-box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+box-shadow: 8px 8px 0px #000; 
 transition: transform 0.3s;
 text-align: center;
 }
@@ -235,7 +231,7 @@ aspect-ratio: 1 / 1;
 object-fit: cover;
 border-radius: 50%;
 margin-bottom: 15px;
-border: 3px solid #000; /* Border around the team member's image */
+border: 3px solid #000; 
 }
 
 .team-member h3 {
@@ -270,41 +266,41 @@ button {
   background-color: #f8ede5;
 color: #4c2c17;
 border: 4px solid #000;
-border-radius: 15px; /* Rounded corners */
+border-radius: 15px; 
 padding: 15px 25px;
 cursor: pointer;
 font-size: 1.2rem;
-box-shadow: 5px 5px 0px #000; /* Comic-style shadow */
+box-shadow: 5px 5px 0px #000; 
 transition: transform 0.3s ease, background-color 0.3s ease;
 
 }
 
 .social-buttons {
-text-align: center; /* Center align the buttons */
-padding: 20px; /* Padding around the buttons */
+text-align: center; 
+padding: 20px; 
 }
 
 .social-buttons a {
-margin: 0 10px; /* Space between buttons */
-font-size: 24px; /* Icon size */
-color: #333; /* Icon color */
-text-decoration: none; /* Removes underline */
+margin: 0 10px; 
+font-size: 24px; 
+color: #333; 
+text-decoration: none;
 }
 
 .social-buttons a:hover {
-color: #555; /* Icon hover color */
+color: #555; 
 }
 
 
 #about, #contact {
 background-color: #fff;
 border: 4px solid #000;
-border-radius: 15px; /* Rounded corners */
+border-radius: 15px;
 padding: 30px;
 width: 80%;
 max-width: 800px;
 margin: 50px auto;
-box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+box-shadow: 8px 8px 0px #000; 
 text-align: center;
 font-size: 1.2rem;
 }

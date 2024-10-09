@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Comic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      font-family: 'Comic Neue', Arial, sans-serif;
+      background-color: #8c5c47;
       margin: 0;
       padding: 0;
     }
@@ -16,8 +19,8 @@
 
     /* Menu Bar Styles */
     nav {
-      background-color: #333;
-      color: #fff;
+      background-color: #4c2c17;
+      color: #07485B;
       padding: 10px;
       position: fixed;
       top: 0;
@@ -29,7 +32,7 @@
 
 
     nav a {
-      color: white;
+      color: #FFFFFF;
       text-decoration: none;
       padding: 10px;
       font-size: 1.2rem;
@@ -37,7 +40,7 @@
 
 
     nav a:hover {
-      background-color: #555;
+      opacity: 0.6; /* Sets the opacity to 70% on hover */
     }
 
 
@@ -45,6 +48,7 @@
     body {
       margin-top: 60px;
       /* Adjust for fixed menu bar */
+      font-size: 24px;
     }
 
 
@@ -52,27 +56,31 @@
     section {
       padding: 50px 20px;
       text-align: center;
-      background-color: #fff;
+      background-color: #8c5c47;
     }
-
+    
 
     #about {
-      background-color: #e0e0e0;
+      background-color: #8c5c47;
     }
 
 
     #contact {
-      background-color: #ccc;
+      background-color: #8c5c47;
     }
 
 
     #comic-container {
       width: 80%;
-      max-width: 1000px;
-      position: relative;
-      border: 2px solid #000;
-      background-color: #fff;
-      margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    border: 4px solid #000;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+    text-align: center;
     }
 
 
@@ -200,53 +208,60 @@
 
     /* Flexbox layout for team members */
     .team-section {
-      margin-top: 50px;
-    }
+    background-color: #fff;
+    border: 4px solid #000;
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+    text-align: center;
+}
 
-    .team-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
-    }
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
 
-    .team-member {
-      text-align: center;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-      width: 250px;
-    }
+.team-member {
+    background-color: #f8ede5;
+    color: #4c2c17;
+    border: 4px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+    transition: transform 0.3s;
+    text-align: center;
+}
 
-    .team-member img {
-      width: 100%;
-      max-width: 250px;
-      aspect-ratio: 1 / 1;
-      /* This ensures a 1:1 aspect ratio for perfect circles */
-      object-fit: cover;
-      /* Ensures the image fills the circle without distortion */
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
+.team-member img {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #000; /* Border around the team member's image */
+}
 
+.team-member h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
 
-    .team-member h3 {
-      font-size: 1.3rem;
-      margin: 10px 0;
-    }
+.team-member p {
+    font-size: 0.9rem;
+    color: #00000;
+}
 
-    .team-member p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    .team-member:hover {
-      transform: translateY(-10px);
-    }
-
+.team-member:hover {
+    transform: translateY(-10px);
+}
     /* Responsive design */
     @media (max-width: 768px) {
       .team-container {
@@ -261,11 +276,61 @@
 
 
     button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      margin: 5px;
-      cursor: pointer;
+
+
+      background-color: #f8ede5;
+    color: #4c2c17;
+    border: 4px solid #000;
+    border-radius: 15px; /* Rounded corners */
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 0px #000; /* Comic-style shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
     }
+
+    .social-buttons {
+    text-align: center; /* Center align the buttons */
+    padding: 20px; /* Padding around the buttons */
+}
+
+.social-buttons a {
+    margin: 0 10px; /* Space between buttons */
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Removes underline */
+}
+
+.social-buttons a:hover {
+    color: #555; /* Icon hover color */
+}
+
+
+#about, #contact {
+    background-color: #fff;
+    border: 4px solid #000;
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 8px 8px 0px #000; /* Comic-style shadow */
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#about h2, #contact h2 {
+    font-family: 'Comic Neue', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p, #contact p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
   </style>
 </head>
 
@@ -283,6 +348,9 @@
   <!-- Comic Section -->
   <section id="comic">
     <div id="comic-container">
+
+      <h2 align = 'center'>Ghosted</h2>
+
       <!-- Comic Image -->
       <img id="comic-image" src="images/scene1.jpg" alt="Comic Scene">
 
@@ -318,34 +386,34 @@
 
   <!-- Team Section -->
   <div class="team-section">
-    <h2>Meet the Team</h2>
+    <h2 align = 'center'>Meet the Team</h2>
     <div class="team-container">
       <!-- Team Member 1 -->
       <div class="team-member">
         <img src="media/ivan.jpg" alt="Team Member 1">
         <h3>Ivan</h3>
-        <p>Lead Writer and Storyteller. Jane brings the narrative magic to life with her compelling stories.</p>
+        <p>Team leader and web developer.</p>
       </div>
 
       <!-- Team Member 2 -->
       <div class="team-member">
         <img src="media/uditii.jpg" alt="Team Member 2">
         <h3>Uditi</h3>
-        <p>Illustrator and Animator. John is responsible for creating the stunning visuals in the comic.</p>
+        <p>Web developer.</p>
       </div>
 
       <!-- Team Member 3 -->
       <div class="team-member">
         <img src="media/haroon.jpg" alt="Team Member 3">
         <h3>Haroon</h3>
-        <p>Technical Lead. Alice ensures the interactive elements run smoothly across all platforms.</p>
+        <p>Animator.</p>
       </div>
 
       <!-- Team Member 4 -->
       <div class="team-member">
         <img src="media/maryam.jpg" alt="Team Member 4">
         <h3>Maryam</h3>
-        <p>Project Manager. Michael oversees the project and makes sure everything is on track.</p>
+        <p>Animator, ghost.</p>
       </div>
     </div>
 
@@ -364,9 +432,15 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p>If you have any questions, feedback, or just want to say hi, feel free to reach out to us!</p>
-    <p>Email: info@interactivecomic.com</p>
-    <p>Phone: +1-234-567-890</p>
-    <p>Follow us on social media for updates and more interactive stories!</p>
+    <div class="social-buttons">
+      <a href="mailto:us2133@nyu.edu" class="email-btn">
+          <i class="fa fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/uditisharma" target="_blank" class="instagram-btn">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+  </div>
+
   </section>
 
 
